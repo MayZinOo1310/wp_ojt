@@ -1,0 +1,209 @@
+/* common */
+ul{
+  list-style: none;
+}
+.container{
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.common-mv {
+  padding: 200px 0 135px;
+  background: url(../images/about_bg.png) no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.common-mv h2 {
+  font-size: 50px;
+  font-family: 'Rockwell Nova W07';
+  font-weight: 700;
+  line-height: 2;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.d-flex main{
+  width: 70%;
+}
+
+.d-flex aside {
+  box-shadow: -35px 0px 85px -99px #000000;
+  width: 30%;
+  padding: 20px;
+}
+
+.d-flex aside ul {
+  list-style: none;
+  padding-left: 0 !important;
+  margin: 0;
+}
+
+.d-flex aside ul li a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1C1C1C;
+}
+.d-flex aside h2{
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* header
+--------------------------------------------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  opacity: 0.9;
+  z-index: 10;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-bar .logo {
+  width: 243px;
+  margin: 10px 0 10px;
+}
+
+.main-navigation li {
+  position: relative;
+  border: 1px solid #D50C0D;
+  border-radius: 50px;
+  padding: 4px 30px;
+  margin-right: 27px;
+}
+
+.main-navigation li:last-child {
+  margin-right: 0;
+}
+
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+  color: #1C1C1C;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header .main-navigation .sub-menu {
+  background: #000;
+  border-radius: 0.4rem;
+  padding: 1rem 0;
+  position: absolute;
+  right: 9999rem;
+  top: 26px;
+  transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
+  transform: translateY(0.6rem);
+  width: 20rem;
+  z-index: 1;
+}
+
+header .main-navigation .sub-menu a {
+  color: #FFFFFF;
+}
+
+header .main-navigation .sub-menu li {
+  border: none;
+}
+
+.main-navigation ul li:hover>ul {
+  left: 0;
+}
+
+/* footer
+--------------------------------------------- */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: url(../images/footer_bg.png) no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+  padding: 80px 16px 190px;
+  color: #fff;
+}
+
+.footer .footer-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer .footer-menu ul li {
+  margin-right: 20px;
+}
+
+.footer .footer-menu ul li a {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer .footer-gp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-box {
+  width: 33.33%;
+  text-align: center;
+}
+
+.footer .footer-box h3 {
+  font-size: 50px;
+  font-family: 'Amatic SC';
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.footer .footer-box p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer .footer-box a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer .footer-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #AF3132;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 12px;
+}
+
+.footer .footer-bar .container{
+  padding: 0 50px;
+}
+
+.footer .footer-bar p {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.footer .footer-bar a {
+  text-decoration: none;
+  color: #1C1C1C;
+}
