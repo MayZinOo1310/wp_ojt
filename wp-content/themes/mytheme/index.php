@@ -246,7 +246,7 @@ get_header();
       </ul>
       <div class="btn"><a href="<?php echo esc_url(home_url('/cake')); ?>">Cake</a></div>
     </div>
-  </div><!-- .cake-sec -->
+  </div><!-- .cake-post -->
 </main><!-- #main -->
 <?php
 get_footer();
