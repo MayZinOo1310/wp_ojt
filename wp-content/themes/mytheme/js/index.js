@@ -19,3 +19,16 @@ var thumbs = new Swiper ('.branch-thumbs', {
   loop: true,
   slideToClickedSlide: true,
 });
+
+//tab-content
+$(document).ready(function() {
+  $('ul.menu-tabs li').click(function () {
+    var tab_id = $(this).attr('data-tab');
+
+    $('ul.menu-tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#" + tab_id).addClass('current');
+  });
+});
