@@ -604,13 +604,14 @@
   background-color: transparent;
   border: none;
   color: #FFFFFF;
+  cursor: pointer;
   font-family: 'Amatic SC';
   font-size: 35px;
   font-weight: 700;
   padding: 0 40px;
-  cursor: pointer;
 }
-.menu-sec .menu-tabs li button:focus{
+
+.menu-sec .menu-tabs li button:focus {
   border: none;
 }
 
@@ -642,20 +643,20 @@
   background: url(../images/drinks_icon.png) no-repeat;
 }
 
-.menu-sec .menu-list {
+.menu-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -44px;
   padding: 0;
 }
 
-.menu-sec .menu-list li {
+.menu-list li {
   margin-bottom: 118px;
   padding: 0 44px;
   width: 25%;
 }
 
-.menu-sec .menu-list li a {
+.menu-list li a {
   color: #FFFFFF;
   font-family: 'Amatic SC';
   font-size: 30px;
@@ -665,7 +666,7 @@
   text-decoration: none;
 }
 
-.menu-sec .menu-list li .post-ttl {
+.menu-list li .post-ttl {
   background-color: #D50C0D;
   display: block;
   margin-top: -40px;
@@ -681,17 +682,13 @@
   display: flex;
 }
 
-/* .menu-sec ul.tabs {
-  display: flex;
+.menu-sec .menu-tabs li.current button {
+  color: #D50C0D;
 }
 
-.menu-sec ul.tabs li button {
-  text-transform: uppercase;
+.menu-sec .menu-tabs li button:hover {
+  color: #D50C0D;
 }
-
-.menu-sec ul.tabs li.current button {
-  border-bottom: 1px solid #000;
-} */
 
 /* post common */
 .post-common {
@@ -781,14 +778,16 @@
   transform: rotate(135deg);
   width: 10px;
 }
-.cake-post{
+
+.cake-post {
   background-color: #FFFFFF;
 }
-.cake-post .post-ttl{
+
+.cake-post .post-ttl {
   color: #1C1C1C;
 }
 
-.cake-post .btn a{
+.cake-post .btn a {
   border: 1px solid #1C1C1C;
   color: #1C1C1C;
 }
@@ -950,4 +949,113 @@
 .wp-pagenavi a.previouspostslink:hover,
 .wp-pagenavi a.nextpostslink:hover {
   border-bottom: none !important;
+}
+
+/* menu-single */
+.menusingle-sec {
+  background-color: #1C1C1C;
+  padding: 70px 16px 80px;
+}
+
+.menu-single {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.menu-single .img-box {
+  width: 39.3%;
+}
+
+.menu-single .img-box img {
+  max-width: 508px;
+  width: 100%;
+}
+
+.menu-single .post-content {
+  margin-left: 6%;
+  width: 54%;
+}
+
+.menu-single p {
+  color: #FFFFFF;
+  font-weight: 500;
+  margin: 0;
+}
+
+.menu-single .ttl-content {
+  border-bottom: 1px dashed #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.menu-single .post-ttl {
+  color: #FFFFFF;
+  font-family: 'Amatic SC';
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.menu-single .post-txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+.menu-single .price {
+  color: #D50C0D;
+  font-family: 'Century Gothic';
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.menu-single .txt-content {
+  margin-top: 45px;
+}
+
+.menu-single h3 {
+  color: #FFFFFF;
+  font-family: 'Century Gothic';
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.menu-single ul {
+  color: #FFFFFF;
+  margin: 10px 0 0 18px;
+  padding: 0;
+  text-indent: -18px;
+}
+
+.menu-single ul li {
+  font-size: 16px;
+  line-height: 1.9;
+  list-style: disc;
+  padding-left: 18px;
+}
+
+.menu-single .field-box {
+  width: 50%;
+}
+
+.related-ttl {
+  align-items: baseline;
+  color: #FFFFFF;
+  display: flex;
+  font-family: 'Century Gothic';
+  font-size: 30px;
+  font-weight: 700;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.related-ttl .border {
+  border-bottom: 1px dashed #fff;
+  display: block;
+  width: 85%;
 }

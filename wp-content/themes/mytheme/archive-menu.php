@@ -43,8 +43,8 @@ get_header(); ?>
       <ul class="menu-list tab-content current" id="all">
         <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
           <li>
-            <a href="#">
-              <div class=""><?php the_post_thumbnail(''); ?></div>
+            <a href="<?php the_permalink(); ?>">
+              <?php the_post_thumbnail(''); ?>
               <span class="post-ttl"><?php the_title(); ?></span>
             </a>
           </li>
@@ -67,8 +67,8 @@ get_header(); ?>
           <ul class="menu-list tab-content" id="<?php echo $term->slug; ?>">
             <?php while ($posts->have_posts()) : $posts->the_post(); ?>
               <li>
-                <a href="#">
-                  <div class=""><?php the_post_thumbnail(''); ?></div>
+                <a href="<?php the_permalink(); ?>">
+                  <?php the_post_thumbnail(''); ?>
                   <span class="post-ttl"><?php the_title(); ?></span>
                 </a>
               </li>

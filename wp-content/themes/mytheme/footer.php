@@ -32,7 +32,7 @@
       </div>
       <div class="footer-box">
         <h3>Opening Hours</h3>
-        <p>Open Daily <br> 9:00 Am To 20:00 Pmn</p>
+        <p>Open Daily <br> 9:00 Am To 20:00 Pm</p>
       </div>
       <div class="footer-box">
         <h3>Contact Us</h3>
