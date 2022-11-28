@@ -113,8 +113,10 @@ get_header();
                     <div class="txt-box">
                       <div class="col-2box">
                         <p class="newsdate"><?php echo get_the_date("Y-m-d"); ?></p>
-                        <p class="cat-name"><?php $cat = get_the_category();
-                                            echo $cat[0]->cat_name; ?></p>
+                        <p class="cat-name">
+                          <?php $cat = get_the_category();
+                          echo $cat[0]->cat_name; ?>
+                        </p>
                       </div>
                       <p class="post-ttl"><?php the_title(); ?></p>
                     </div>
