@@ -30,7 +30,6 @@ if (!is_active_sidebar('sidebar-1')) {
       &title_li=&use_desc_for_title=1&child_of=' . $this_category->cat_ID .
       "&echo=0");
   if ($this_category) { ?>
-
     <ul>
       <?php echo $this_category; ?>
     </ul>
@@ -91,10 +90,14 @@ if (!is_active_sidebar('sidebar-1')) {
     <?php endwhile;
     wp_reset_postdata(); ?>
   </ul><!-- /.ranking-post -->
-  
-  <?php
+   
+  <!--<?php
     if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
       <div id="widget-area" class="chw-widget-area widget-area" role="complementary">
       <?php dynamic_sidebar( 'sidebar-1' ); ?>
-  <?php endif; ?>
+  <?php endif; ?> -->
+  <?php
+		$mytheme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives.', 'mytheme' ), convert_smilies( ':)' ) ) . '</p>';
+	  the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$mytheme_archive_content" );
+	?>
 </aside><!-- #secondary -->

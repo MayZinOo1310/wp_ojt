@@ -565,12 +565,12 @@
   margin: 0;
 }
 
-.date {
+/* .date {
   font-family: 'Amatic SC';
   font-size: 30px;
   font-weight: 700;
   text-align: right;
-}
+} */
 
 /* post-thumbnail */
 .post-thumbnail {
@@ -855,6 +855,15 @@
   margin-right: 15px;
 }
 
+.widget_archive p {
+  color: #FFFFFF;
+}
+
+.widget select {
+  padding: 5px;
+  width: 100%;
+}
+
 /* cake-list */
 .cake-sec {
   padding: 80px 0;
@@ -1084,14 +1093,14 @@
 .contact-sec .contact-gp input,
 .contact-sec .contact-gp select,
 .contact-sec .contact-gp textarea {
-  background-color: transparent!important;
-  border: 1px solid #707070!important;
+  background-color: transparent !important;
+  border: 1px solid #707070 !important;
   border-radius: 0;
-  color: #A2A2A2!important;
-  font-size: 16px!important;
+  color: #A2A2A2 !important;
+  font-size: 16px !important;
+  max-width: 100% !important;
   padding: 9px 10px;
-  width: 100%!important;
-  max-width: 100%!important;
+  width: 100% !important;
 }
 
 .contact-sec .contact-gp input:focus-visible,
@@ -1104,7 +1113,7 @@
 }
 
 .contact-sec .contact-gp textarea {
-  max-height: 150px!important;
+  max-height: 150px !important;
 }
 
 .contact-sec .contact-gp p,
@@ -1125,18 +1134,18 @@
 }
 
 .contact-sec .contact-gp .contact-btn {
-  border: 1px solid #FFFFFF!important;
-  color: #FFFFFF!important;
+  background-color: transparent !important;
+  border: 1px solid #FFFFFF !important;
+  color: #FFFFFF !important;
   cursor: pointer;
   display: inline-block;
   font-family: 'Amatic SC';
-  font-size: 30px!important;
+  font-size: 30px !important;
   font-weight: 700;
-  max-width: 194px!important;
+  max-width: 194px !important;
   padding: 7px 10px;
   text-decoration: none;
-  width: 100%!important;
-  background-color: transparent!important;
+  width: 100% !important;
 }
 
 .wpcf7-response-output {
@@ -1151,10 +1160,12 @@
 .contact-sec .contact-gp .wpcf7cf_group {
   margin-bottom: 30px;
 }
-.wpforms-required-label{
-  display: inline-block!important;
+
+.wpforms-required-label {
+  display: inline-block !important;
 }
-.wpforms-error{
+
+.wpforms-error {
   font-size: 14px;
 }
 
@@ -1163,9 +1174,43 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label {
 }
 
 /* tag */
-.tag h5{
+.tag h5 {
+  color: #FFFFFF;
   font-size: 24px;
   font-weight: 700;
-  color: #FFFFFF;
   text-align: center;
+}
+
+/* date archive */
+.date-sec {
+  padding: 120px 16px 80px;
+  text-align: left;
+}
+
+.date-sec a {
+  color: #1C1C1C;
+}
+
+.date-sec ul li {
+  margin-bottom: 30px;
+}
+
+/* error-404 */
+.error-404 {
+  padding: 120px 16px 80px;
+}
+
+.error-404 p {
+  font-size: 18px;
+}
+
+.error-404 p a {
+  color: #1C1C1C;
+  font-weight: 700;
+}
+
+/* search-sec */
+.search-sec,
+.no-results {
+  padding: 120px 16px 80px;
 }
